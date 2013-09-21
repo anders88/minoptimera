@@ -1,3 +1,7 @@
 
 <h2>Legg ved dokumenter</h2>
-<input type="file" multiple="" class="btn btn-link"/>
+<span style="display: none; ">
+    <input type="file" id="uploadbtn" onchange="angular.element(this).scope().fileSelected()"/>
+</span>
+<button class="btn btn-primary" ng-click="upload()">Velg dokumenter</button>
+
