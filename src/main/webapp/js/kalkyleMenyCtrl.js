@@ -30,7 +30,7 @@ angular.module('minoptimera').controller('KalkyleMenyCtrl',
 			$scope.toggleVinduIcon = function() {
 				$scope.vinduTagged = !$scope.vinduTagged;
 				if ($scope.vinduTagged) {
-					$scope.vinduIcon = "img/dor-utvendig-valgt.png";
+					$scope.vinduIcon = "img/ikke-implementert-valg.png";
 				} else {
 					$scope.vinduIcon = "img/vinduer.png";
 				}
@@ -39,7 +39,7 @@ angular.module('minoptimera').controller('KalkyleMenyCtrl',
 			$scope.toggleTakstolerIcon = function() {
 				$scope.takstolerTagged = !$scope.takstolerTagged;
 				if ($scope.takstolerTagged) {
-					$scope.takstolerIcon = "img/dor-utvendig-valgt.png";
+					$scope.takstolerIcon = "img/ikke-implementert-valg.png";
 				} else {
 					$scope.takstolerIcon = "img/takstoler.png";
 				}
@@ -48,7 +48,7 @@ angular.module('minoptimera').controller('KalkyleMenyCtrl',
 			$scope.toggleByggesettIcon = function() {
 				$scope.byggesettTagged = !$scope.byggesettTagged;
 				if ($scope.byggesettTagged) {
-					$scope.byggesettIcon = "img/dor-utvendig-valgt.png";
+					$scope.byggesettIcon = "img/ikke-implementert-valg.png";
 				} else {
 					$scope.byggesettIcon = "img/byggesett.png";
 				}
@@ -57,7 +57,7 @@ angular.module('minoptimera').controller('KalkyleMenyCtrl',
 			$scope.toggleTrelastIcon = function() {
 				$scope.trelastTagged = !$scope.trelastTagged;
 				if ($scope.trelastTagged) {
-					$scope.trelastIcon = "img/dor-utvendig-valgt.png";
+					$scope.trelastIcon = "img/trelast-valgt.png";
 				} else {
 					$scope.trelastIcon = "img/trelast.png";
 				}
@@ -75,11 +75,37 @@ angular.module('minoptimera').controller('KalkyleMenyCtrl',
 			$scope.toggleDorInnvendigIcon = function() {
 				$scope.dorInnvendigTagged = !$scope.dorInnvendigTagged;
 				if ($scope.dorInnvendigTagged) {
-					$scope.dorInnvendigIcon = "img/dor-utvendig-valgt.png";
+					$scope.dorInnvendigIcon = "img/ikke-implementert-valg.png";
 				} else {
 					$scope.dorInnvendigIcon = "img/dor-innvendig.png";
 				}
 			}
 			
+			$scope.toggleVentilasjonsanleggIcon = function() {
+				$scope.ventilasjonsanleggTagged = !$scope.ventilasjonsanleggTagged;
+				if ($scope.ventilasjonsanleggTagged) {
+					$scope.ventilasjonsanleggIcon = "img/ventilasjonsanlegg-valgt.png";
+				} else {
+					$scope.ventilasjonsanleggIcon = "img/ventilasjonsanlegg.png";
+				}
+			}
+			
+			$scope.togglePipeIcon = function() {
+				$scope.pipeTagged = !$scope.pipeTagged;
+				if ($scope.pipeTagged) {
+					$scope.pipeIcon = "img/ikke-implementert-valg.png";
+				} else {
+					$scope.pipeIcon = "img/pipe.png";
+				}
+			}
+			
+			$scope.toggleSentralstovesugerIcon = function() {
+				$scope.sentralstovesugerTagged = !$scope.sentralstovesugerTagged;
+				if ($scope.sentralstovesugerTagged) {
+					$scope.sentralstovesugerIcon = "img/ikke-implementert-valg.png";
+				} else {
+					$scope.sentralstovesugerIcon = "img/sentralstovesuger.png";
+				}
+			}
 			
 		} ]);
