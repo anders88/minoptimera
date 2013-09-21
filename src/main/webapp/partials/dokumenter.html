@@ -4,7 +4,7 @@
     <input type="file" id="uploadbtn" onchange="angular.element(this).scope().fileSelected()"/>
 </span>
 <button class="btn btn-primary" ng-click="upload()">Velg dokumenter</button>
-<ul>
-    <li ng-repeat="filename in filenames">{{filename}}</li>
+<ul class="bigicon">
+    <li ng-repeat="filename in filenames"><h3>{{filename}}</h3></li>
 </ul>
 
