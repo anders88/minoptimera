@@ -10,4 +10,14 @@ angular.module('minoptimera')
                 $scope.$apply();
             };
 
+            $scope.grunnlag = "standard";
+
+            $scope.activeClass = function(model,value) {
+                return (value == model) ? "btn-primary active" : "";
+            };
+
+            $scope.setGrunnlag = function(value) {
+                $scope.grunnlag = value;
+            };
+
         }]);
