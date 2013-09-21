@@ -9,12 +9,16 @@ ul.bigicon li {
     padding-left: 40px;
 }
 
-.two-btn {
+.btn-two {
 	width: 37.5%;
 	font-size: 150%;
 }
 
-.three-btn {
+.btn-three {
 	width: 25%;
 	font-size: 130%;
+}
+
+.btn-prev-next {
+	width: 25%;
 }
