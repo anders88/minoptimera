@@ -27,3 +27,10 @@ ul.bigicon li {
 .btn-prev-next {
 	width: 25%;
 }
+
+.control-label-left {
+    float: left;
+    width: 160px;
+    padding-top: 5px;
+    text-align: left;
+}
