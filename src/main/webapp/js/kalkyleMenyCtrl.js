@@ -1,111 +1,58 @@
 angular.module('minoptimera').controller('KalkyleMenyCtrl',
-		[ '$scope', function($scope) {
-			$scope.takstolerTagged = false;
-			$scope.takstolerIcon = "img/takstoler.png";
+    [ '$scope', 'choicesService',function($scope,choicesService) {
+    $scope.takstolerIcon = choicesService.readIcon('takstoler');
+    $scope.toggleTakstolerIcon = function() {
+        choicesService.toggle('takstoler');
+        $scope.takstolerIcon = choicesService.readIcon('takstoler');
+    }
 
-			$scope.trelastTagged = false;
-			$scope.trelastIcon = "img/trelast.png";
+    $scope.vinduIcon = choicesService.readIcon('vindu');
+    $scope.toggleVinduIcon = function() {
+        choicesService.toggle('vindu');
+        $scope.vinduIcon = choicesService.readIcon('vindu');
+    };
 
-			$scope.byggesettTagged = false;
-			$scope.byggesettIcon = "img/byggesett.png";
+    $scope.byggesettIcon = choicesService.readIcon('byggesett');
+    $scope.toggleByggesettIcon = function() {
+        choicesService.toggle('byggesett');
+        $scope.byggesettIcon = choicesService.readIcon('byggesett');
+    };
 
-			$scope.vinduTagged = false;
-			$scope.vinduIcon = "img/vinduer.png";
+    $scope.trelastIcon = choicesService.readIcon('trelast');
+    $scope.toggleTrelastIcon = function() {
+        choicesService.toggle('trelast');
+        $scope.trelastIcon = choicesService.readIcon('trelast');
+    };
 
-			$scope.dorUtvendigTagged = false;
-			$scope.dorUtvendigIcon = "img/dor-utvendig.png";
+    $scope.dorUtvendigIcon = choicesService.readIcon('dorUtvendig');
+    $scope.toggleDorUtvendigIcon = function() {
+        choicesService.toggle('dorUtvendig');
+        $scope.dorUtvendigIcon = choicesService.readIcon('dorUtvendig');
+    };
 
-			$scope.dorInnvendigTagged = false;
-			$scope.dorInnvendigIcon = "img/dor-innvendig.png";
+    $scope.dorInnvendigIcon = choicesService.readIcon('dorInnvendig');
+    $scope.toggleDorInnvendigIcon = function() {
+        choicesService.toggle('dorInnvendig');
+        $scope.dorInnvendigIcon = choicesService.readIcon('dorInnvendig');
+    };
 
-			$scope.ventilasjonsanleggTagged = false;
-			$scope.ventilasjonsanleggIcon = "img/ventilasjonsanlegg.png";
+    $scope.ventilasjonsanleggIcon = choicesService.readIcon('ventilasjonsanlegg');
+    $scope.toggleVentilasjonsanleggIcon = function() {
+        choicesService.toggle('ventilasjonsanlegg');
+        $scope.ventilasjonsanleggIcon = choicesService.readIcon('ventilasjonsanlegg');
 
-			$scope.pipeTagged = false;
-			$scope.pipeIcon = "img/pipe.png";
+    };
 
-			$scope.sentralstovesugerTagged = false;
-			$scope.sentralstovesugerIcon = "img/sentralstovesuger.png";
+    $scope.pipeIcon = choicesService.readIcon('pipe');
+    $scope.togglePipeIcon = function() {
+        choicesService.toggle('pipe');
+        $scope.pipeIcon = choicesService.readIcon('pipe');
+    };
 
-			$scope.toggleVinduIcon = function() {
-				$scope.vinduTagged = !$scope.vinduTagged;
-				if ($scope.vinduTagged) {
-					$scope.vinduIcon = "img/ikke-implementert-valg.png";
-				} else {
-					$scope.vinduIcon = "img/vinduer.png";
-				}
-			}
+    $scope.sentralstovesugerIcon = choicesService.readIcon('sentralstovsuger');
+    $scope.toggleSentralstovesugerIcon = function() {
+        choicesService.toggle('sentralstovsuger');
+        $scope.sentralstovesugerIcon = choicesService.readIcon('sentralstovsuger');
+    };
 
-			$scope.toggleTakstolerIcon = function() {
-				$scope.takstolerTagged = !$scope.takstolerTagged;
-				if ($scope.takstolerTagged) {
-					$scope.takstolerIcon = "img/ikke-implementert-valg.png";
-				} else {
-					$scope.takstolerIcon = "img/takstoler.png";
-				}
-			}
-
-			$scope.toggleByggesettIcon = function() {
-				$scope.byggesettTagged = !$scope.byggesettTagged;
-				if ($scope.byggesettTagged) {
-					$scope.byggesettIcon = "img/ikke-implementert-valg.png";
-				} else {
-					$scope.byggesettIcon = "img/byggesett.png";
-				}
-			}
-
-			$scope.toggleTrelastIcon = function() {
-				$scope.trelastTagged = !$scope.trelastTagged;
-				if ($scope.trelastTagged) {
-					$scope.trelastIcon = "img/trelast-valgt.png";
-				} else {
-					$scope.trelastIcon = "img/trelast.png";
-				}
-			}
-
-			$scope.toggleDorUtvendigIcon = function() {
-				$scope.dorUtvendigTagged = !$scope.dorUtvendigTagged;
-				if ($scope.dorUtvendigTagged) {
-					$scope.dorUtvendigIcon = "img/dor-utvendig-valgt.png";
-				} else {
-					$scope.dorUtvendigIcon = "img/dor-utvendig.png";
-				}
-			}
-
-			$scope.toggleDorInnvendigIcon = function() {
-				$scope.dorInnvendigTagged = !$scope.dorInnvendigTagged;
-				if ($scope.dorInnvendigTagged) {
-					$scope.dorInnvendigIcon = "img/ikke-implementert-valg.png";
-				} else {
-					$scope.dorInnvendigIcon = "img/dor-innvendig.png";
-				}
-			}
-			
-			$scope.toggleVentilasjonsanleggIcon = function() {
-				$scope.ventilasjonsanleggTagged = !$scope.ventilasjonsanleggTagged;
-				if ($scope.ventilasjonsanleggTagged) {
-					$scope.ventilasjonsanleggIcon = "img/ventilasjonsanlegg-valgt.png";
-				} else {
-					$scope.ventilasjonsanleggIcon = "img/ventilasjonsanlegg.png";
-				}
-			}
-			
-			$scope.togglePipeIcon = function() {
-				$scope.pipeTagged = !$scope.pipeTagged;
-				if ($scope.pipeTagged) {
-					$scope.pipeIcon = "img/ikke-implementert-valg.png";
-				} else {
-					$scope.pipeIcon = "img/pipe.png";
-				}
-			}
-			
-			$scope.toggleSentralstovesugerIcon = function() {
-				$scope.sentralstovesugerTagged = !$scope.sentralstovesugerTagged;
-				if ($scope.sentralstovesugerTagged) {
-					$scope.sentralstovesugerIcon = "img/ikke-implementert-valg.png";
-				} else {
-					$scope.sentralstovesugerIcon = "img/sentralstovesuger.png";
-				}
-			}
-			
-		} ]);
+} ]);
