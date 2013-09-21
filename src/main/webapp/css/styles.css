@@ -5,3 +5,14 @@
     line-height: 117px;
     width: 117px;
 }
+
+ul.bigicon {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.bigicon li {
+    background: url("icons/liimg.png") no-repeat;
+    padding-left: 40px;
+}
