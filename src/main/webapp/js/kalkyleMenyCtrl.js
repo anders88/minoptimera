@@ -3,6 +3,9 @@ angular.module('minoptimera').controller('KalkyleMenyCtrl',
 			$scope.takstolerTagged = false;
 			$scope.takstolerIcon = "img/takstoler.png";
 
+			$scope.trelastTagged = false;
+			$scope.trelastIcon = "img/trelast.png";
+
 			$scope.byggesettTagged = false;
 			$scope.byggesettIcon = "img/byggesett.png";
 
@@ -33,6 +36,15 @@ angular.module('minoptimera').controller('KalkyleMenyCtrl',
 					$scope.byggesettIcon = "img/dor-utvendig-valgt.png";
 				} else {
 					$scope.byggesettIcon = "img/byggesett.png";
+				}
+			}
+
+			$scope.toggleTrelastIcon = function() {
+				$scope.trelastTagged = !$scope.trelastTagged;
+				if ($scope.trelastTagged) {
+					$scope.trelastIcon = "img/dor-utvendig-valgt.png";
+				} else {
+					$scope.trelastIcon = "img/trelast.png";
 				}
 			}
 		} ]);
