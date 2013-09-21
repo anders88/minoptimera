@@ -1,3 +1,6 @@
 .idea/
 minoptimera.iml
 target/
+.classpath
+.project
+.settings/
