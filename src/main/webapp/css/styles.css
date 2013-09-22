@@ -9,6 +9,10 @@ ul.bigicon li {
     padding-left: 40px;
 }
 
+.btn {
+	min-height: 150px;
+}
+
 .btn-two {
 	width: 37.5%;
 	font-size: 150%;
@@ -33,4 +37,8 @@ ul.bigicon li {
     width: 160px;
     padding-top: 5px;
     text-align: left;
+}
+
+.img-grid {
+	min-width: 200px;
 }
