@@ -32,15 +32,15 @@ ul.bigicon li {
 }
 
 .btn-two {
-	width: 37.5%;
+	width: 50%;
 }
 
 .btn-two-large {
-    width: 45%;
+    width: 50%;
 }
 
 .btn-three {
-	width: 25%;
+	width: 33%;
 }
 
 .btn-prev-next {
@@ -49,7 +49,7 @@ ul.bigicon li {
 
 .control-label-left {
     float: left;
-    width: 450px;
+    width: 160px;
     padding-top: 5px;
     text-align: left;
 }

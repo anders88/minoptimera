@@ -1,5 +1,9 @@
-
-<h2>Legg ved dokumenter</h2>
+<br>
+<br>
+<br>
+<h1>Legg ved dokumenter</h1>
+<br>
+<br>
 <span style="display: none; ">
     <input type="file" id="uploadbtn" onchange="angular.element(this).scope().fileSelected()"/>
 </span>
@@ -7,13 +11,20 @@
 <button class="btn btn-primary btn-large" ng-click="upload()">Velg dokumenter</button>
 </div>
         <br/>
-        <h2>Valgte dokumenter</h2>
+        <br/>
+        <h1>Valgte dokumenter</h1>
 <ul class="bigicon">
     <li ng-repeat="filename in documents.uploadedFiles"><h3>{{filename}}</h3></li>
 </ul>
+
 <br/>
 <br/>
-<h2>Grunnlag for kalkulasjon</h2>
+<br/>
+<br/>
+<br/>
+
+<h1>Grunnlag for kalkulasjon</h1>
+<br>
 <div class="row-fluid btn-group" data-toggle="buttons-radio" align="center">
     <button type="button" class="btn btn-large btn-two-large {{activeClass(documents.grunnlag,'standard')}}" ng-click="setGrunnlag('standard')">Optimera standard</button>
     <button type="button" class="btn btn-large btn-two-large {{activeClass(documents.grunnlag,'egen')}}" ng-click="setGrunnlag('egen')">Vedlagt egen beskrivelse</button>
@@ -23,10 +34,17 @@
 <br/>
 <br/>
 <br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 <div class="row-fluid" align="center">
-            <button class="btn btn-large btn-success btn-prev-next" onclick="window.location='#/salgskalkyle'">Forrige</button>
-            <button class="btn btn-large btn-success btn-prev-next" onclick="window.location='#/salgskalkyle/kledning-og-bjelke'">Neste</button>
+            <button class="btn btn-large btn-wide btn-success btn-prev-next" onclick="window.location='#/salgskalkyle'">Forrige</button>
+            <button class="btn btn-large btn-wide btn-success btn-prev-next" onclick="window.location='#/salgskalkyle/kledning-og-bjelke'">Neste</button>
 </div>
 
 
