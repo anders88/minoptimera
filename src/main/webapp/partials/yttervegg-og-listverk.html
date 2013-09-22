@@ -6,25 +6,25 @@
 </h1>
 <div class="row-fluid">
 
-<div class="btn-group span4" align="center">
-	<a class="btn btn-large dropdown-toggle" data-toggle="dropdown">{{yttervegg.hoyde}} mm<span class="caret"></span>
+<div class="btn-group span5" align="center">
+	<a class="btn btn-large btn-block dropdown-toggle" data-toggle="dropdown">{{yttervegg.hoyde}} mm<span class="caret"></span>
 	</a>
 	<ul class="dropdown-menu">
-    <li ng-click="setHoyde(36)"><h2>36 mm</h2></li>
+    <li ng-click="setHoyde(36)">36 mm</li>
     <br>
-    <li ng-click="setHoyde(48)"><h2>48 mm</h2></li>
+    <li ng-click="setHoyde(48)">48 mm</li>
     </ul>
 </div>
 
-<div class="span4" align="center"><h1> X </h1></div>
+<div class="span2" align="center"><h1> X </h1></div>
  
- <div class="btn-group span4" align="center">   
-    <a class="btn btn-large dropdown-toggle" data-toggle="dropdown">{{yttervegg.bredde}} mm<span class="caret"></span>
+ <div class="btn-group span5" align="center">   
+    <a class="btn btn-large btn-block dropdown-toggle" data-toggle="dropdown">{{yttervegg.bredde}} mm<span class="caret"></span>
     </a>
     <ul class="dropdown-menu">
-    <li ng-click="setBredde(148)"><h2>148 mm</h2></li>
+    <li ng-click="setBredde(148)">148 mm</li>
     <br>
-    <li ng-click="setBredde(198)"><h2>198 mm</h2></li>
+    <li ng-click="setBredde(198)">198 mm</li>
     </ul>
 </div>
 
@@ -66,7 +66,6 @@
 <br>
 
 <div class="row-fluid" align="center">
-	<a class="btn btn-large btn-success btn-prev-next"
-		href="#/salgskalkyle/tak">Forrige</a> <a
-		class="btn btn-large btn-success btn-prev-next" href="#/salgskalkyle">Neste</a>
+	<button class="btn btn-large btn-success btn-prev-next" onclick="window.location='#/salgskalkyle/tak'">Forrige</button>
+	<button	class="btn btn-large btn-success btn-prev-next" onclick="window.location='#/salgskalkyle'">Neste</button>
 </div>

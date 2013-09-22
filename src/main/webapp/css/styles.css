@@ -23,19 +23,20 @@ ul.bigicon li {
 	min-height: 150px;
 }
 
+.btn-block {
+	text-align: left;
+}
+
 .btn-two {
 	width: 37.5%;
-	font-size: 150%;
 }
 
 .btn-two-large {
     width: 45%;
-    font-size: 150%;
 }
 
 .btn-three {
 	width: 25%;
-	font-size: 130%;
 }
 
 .btn-prev-next {
