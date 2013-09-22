@@ -20,7 +20,11 @@ ul.bigicon li {
 }
 
 .btn {
-	min-height: 150px;
+	min-height: 75px;
+}
+
+.btn-wide {
+	min-width: 350px;
 }
 
 .btn-block {
