@@ -1,9 +1,9 @@
 
 <h2>Tak</h2>
 <div class="row" class="btn-group" data-toggle="buttons-radio" align="center">
-    <button type="button" class="btn btn-large btn-three {{activeClass(type,'heltre')}}" ng-click="setType('heltre')">Heltre</button>
-    <button type="button" class="btn btn-large btn-three {{activeClass(type,'isperr')}}" ng-click="setType('isperr')">I-sperr</button>
-    <button type="button" class="btn btn-large btn-three {{activeClass(type,'annet')}}" ng-click="setType('annet')">Annet</button>
+    <button type="button" class="btn btn-large btn-three {{activeClass(tak.type,'heltre')}}" ng-click="setType('heltre')">Heltre</button>
+    <button type="button" class="btn btn-large btn-three {{activeClass(tak.type,'isperr')}}" ng-click="setType('isperr')">I-sperr</button>
+    <button type="button" class="btn btn-large btn-three {{activeClass(tak.type,'annet')}}" ng-click="setType('annet')">Annet</button>
 </div>
 <br/>
 <br/>
@@ -18,7 +18,7 @@
         <div class="control-group">
             <label class="control-label-left" for="sperrefot">Synlig sperrefot:</label>
             <div class="controls">
-                <input id="sperrefot" name="sperrefot" type="text" placeholder="placeholder" class="input-xlarge">
+                <input id="sperrefot" ng-model="tak.sperrefot" name="sperrefot" type="text" placeholder="placeholder" class="input-xlarge">
 
             </div>
         </div>
@@ -27,7 +27,7 @@
         <div class="control-group">
             <label class="control-label-left" for="takoppbygging">Oppbygging under tak:</label>
             <div class="controls">
-                <input id="takoppbygging" name="takoppbygging" type="text" placeholder="placeholder" class="input-xlarge">
+                <input id="takoppbygging" ng-model="tak.takoppbygging" name="takoppbygging" type="text" placeholder="placeholder" class="input-xlarge">
 
             </div>
         </div>
@@ -36,7 +36,7 @@
         <div class="control-group">
             <label class="control-label-left" for="taktekking">Taktekking:</label>
             <div class="controls">
-                <input id="taktekking" name="taktekking" type="text" placeholder="placeholder" class="input-xlarge">
+                <input id="taktekking" ng-model="tak.taktekking" name="taktekking" type="text" placeholder="placeholder" class="input-xlarge">
 
             </div>
         </div>

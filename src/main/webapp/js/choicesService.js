@@ -71,6 +71,9 @@ angular.module('minoptimera')
                 hoyde : "48",
                 bredde : "148"
 
+            },
+            tak: {
+
             }
         }
         return service;
