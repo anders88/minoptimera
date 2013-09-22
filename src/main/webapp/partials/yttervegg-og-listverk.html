@@ -7,7 +7,7 @@
 <div class="row-fluid">
 
 <div class="btn-group span4" align="center">
-	<a class="btn btn-large dropdown-toggle" data-toggle="dropdown">{{hoyde}} mm<span class="caret"></span>
+	<a class="btn btn-large dropdown-toggle" data-toggle="dropdown">{{yttervegg.hoyde}} mm<span class="caret"></span>
 	</a>
 	<ul class="dropdown-menu">
     <li ng-click="setHoyde(36)"><h2>36 mm</h2></li>
@@ -19,7 +19,7 @@
 <div class="span4" align="center"><h1> X </h1></div>
  
  <div class="btn-group span4" align="center">   
-    <a class="btn btn-large dropdown-toggle" data-toggle="dropdown">{{bredde}} mm<span class="caret"></span>
+    <a class="btn btn-large dropdown-toggle" data-toggle="dropdown">{{yttervegg.bredde}} mm<span class="caret"></span>
     </a>
     <ul class="dropdown-menu">
     <li ng-click="setBredde(148)"><h2>148 mm</h2></li>
@@ -40,23 +40,23 @@
 <div class="row" class="btn-group" data-toggle="buttons-radio"
 	align="center">
 	<button type="button"
-		class="btn btn-large btn-two {{activeClass(list_profil,'Profilert')}}"
+		class="btn btn-large btn-two {{activeClass(yttervegg.list_profil,'Profilert')}}"
 		ng-click="setProfil('Profilert')">Profilert</button>
 	<button type="button"
-		class="btn btn-large btn-two {{activeClass(list_profil,'Rektangulær')}}"
+		class="btn btn-large btn-two {{activeClass(yttervegg.list_profil,'Rektangulær')}}"
 		ng-click="setProfil('Rektangulær')">Rektangulær</button>
 </div>
 <br>
 <div class="row" class="btn-group" data-toggle="buttons-radio"
 	align="center">
 	<button type="button"
-		class="btn btn-large btn-three {{activeClass(list_behandlet,'Ubehandlet')}}"
+		class="btn btn-large btn-three {{activeClass(yttervegg.list_behandlet,'Ubehandlet')}}"
 		ng-click="setBehandlet('Ubehandlet')">Ubehandlet</button>
 	<button type="button"
-		class="btn btn-large btn-three {{activeClass(list_behandlet,'Grunnet')}}"
+		class="btn btn-large btn-three {{activeClass(yttervegg.list_behandlet,'Grunnet')}}"
 		ng-click="setBehandlet('Grunnet')">Grunnet</button>
 	<button type="button"
-		class="btn btn-large btn-three {{activeClass(list_behandlet,'Malt')}}"
+		class="btn btn-large btn-three {{activeClass(yttervegg.list_behandlet,'Malt')}}"
 		ng-click="setBehandlet('Malt')">Malt</button>
 </div>
 

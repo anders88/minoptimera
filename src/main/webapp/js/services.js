@@ -64,6 +64,13 @@ angular.module('minoptimera')
                 kledning_profil : "",
                 kledning_behandlet : "",
                 dekke : ""
+            },
+            yttervegg: {
+                list_profil : "",
+                list_behandlet : "",
+                hoyde : "48",
+                bredde : "148"
+
             }
         }
         return service;
