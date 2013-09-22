@@ -1206,9 +1206,9 @@ input,
 button,
 select,
 textarea {
-  font-size: 18px;
+  font-size: 40px;
   font-weight: normal;
-  line-height: 20px;
+  line-height: 42px;
 }
 input,
 button,
@@ -1238,11 +1238,11 @@ input[type="tel"],
 input[type="color"],
 .uneditable-input {
   display: inline-block;
-  height: 20px;
+  height: 42px;
   padding: 4px 6px;
   margin-bottom: 10px;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 40px;
+  line-height: 42px;
   color: #555555;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -2120,7 +2120,7 @@ legend + .control-group {
 }
 .btn-large {
   padding: 11px 19px;
-  font-size: 22.5px;
+  font-size: 40px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -2926,7 +2926,7 @@ input[type="submit"].btn.btn-mini {
   font-size: 15.299999999999999px;
 }
 .btn-group > .btn-large {
-  font-size: 22.5px;
+  font-size: 40px;
 }
 .btn-group > .btn:first-child {
   margin-left: 0;
