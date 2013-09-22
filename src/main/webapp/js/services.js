@@ -59,6 +59,11 @@ angular.module('minoptimera')
             documents: {
                 uploadedFiles : [],
                 grunnlag: "standard"
+            },
+            kledningBjelke:  {
+                kledning_profil : "",
+                kledning_behandlet : "",
+                dekke : ""
             }
         }
         return service;

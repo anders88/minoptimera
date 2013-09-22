@@ -2,14 +2,14 @@
 <div class="row" align="center"><h2>Endringer i standard</h2></div>
 <h1>Kledning</h1>
 <div class="row" class="btn-group" data-toggle="buttons-radio" align="center">
-    <button type="button" class="btn btn-large btn-two {{activeClass(kledning_profil,'Profilert')}}" ng-click="setProfil('Profilert')">Profilert</button>
-    <button type="button" class="btn btn-large btn-two {{activeClass(kledning_profil,'Rektangulær')}}" ng-click="setProfil('Rektangulær')">Rektangulær</button>
+    <button type="button" class="btn btn-large btn-two {{activeClass(kledningBjelke.kledning_profil,'Profilert')}}" ng-click="setProfil('Profilert')">Profilert</button>
+    <button type="button" class="btn btn-large btn-two {{activeClass(kledningBjelke.kledning_profil,'Rektangulær')}}" ng-click="setProfil('Rektangulær')">Rektangulær</button>
 </div>
 <br>
 <div class="row" class="btn-group" data-toggle="buttons-radio" align="center">
-<button type="button" class="btn btn-large btn-three {{activeClass(kledning_behandlet,'Ubehandlet')}}" ng-click="setBehandlet('Ubehandlet')">Ubehandlet</button>
-<button type="button" class="btn btn-large btn-three {{activeClass(kledning_behandlet,'Grunnet')}}" ng-click="setBehandlet('Grunnet')">Grunnet</button>
-<button type="button" class="btn btn-large btn-three {{activeClass(kledning_behandlet,'Malt')}}" ng-click="setBehandlet('Malt')">Malt</button>
+<button type="button" class="btn btn-large btn-three {{activeClass(kledningBjelke.kledning_behandlet,'Ubehandlet')}}" ng-click="setBehandlet('Ubehandlet')">Ubehandlet</button>
+<button type="button" class="btn btn-large btn-three {{activeClass(kledningBjelke.kledning_behandlet,'Grunnet')}}" ng-click="setBehandlet('Grunnet')">Grunnet</button>
+<button type="button" class="btn btn-large btn-three {{activeClass(kledningBjelke.kledning_behandlet,'Malt')}}" ng-click="setBehandlet('Malt')">Malt</button>
 </div>
 
 <br>
@@ -18,14 +18,14 @@
 <h1>Bjelkelag</h1>
 
 <div class="row" class="btn-group" data-toggle="buttons-radio" align="center">
-    <button type="button" class="btn btn-large btn-two {{activeClass(bjelketype,'Heltre')}}" ng-click="setBjelketype('Heltre')">Heltre</button>
-    <button type="button" class="btn btn-large btn-two {{activeClass(bjelketype,'I-bjelker')}}" ng-click="setBjelketype('I-bjelker')">I-bjelker</button>
+    <button type="button" class="btn btn-large btn-two {{activeClass(kledningBjelke.bjelketype,'Heltre')}}" ng-click="setBjelketype('Heltre')">Heltre</button>
+    <button type="button" class="btn btn-large btn-two {{activeClass(kledningBjelke.bjelketype,'I-bjelker')}}" ng-click="setBjelketype('I-bjelker')">I-bjelker</button>
 </div>
 <br>
 <div class="row" class="btn-group" data-toggle="buttons-radio" align="center">
-<button type="button" class="btn btn-large btn-three {{activeClass(dekke,'Plate på mark')}}" ng-click="setDekke('Plate på mark')">Plate på mark</button>
-<button type="button" class="btn btn-large btn-three {{activeClass(dekke,'Betongdekk')}}" ng-click="setDekke('Betongdekk')">Betongdekk</button>
-<button type="button" class="btn btn-large btn-three {{activeClass(dekke,'Stubbeloftsgulv')}}" ng-click="setDekke('Stubbeloftsgulv')">Stubbeloftsgulv</button>
+<button type="button" class="btn btn-large btn-three {{activeClass(kledningBjelke.dekke,'Plate på mark')}}" ng-click="setDekke('Plate på mark')">Plate på mark</button>
+<button type="button" class="btn btn-large btn-three {{activeClass(kledningBjelke.dekke,'Betongdekk')}}" ng-click="setDekke('Betongdekk')">Betongdekk</button>
+<button type="button" class="btn btn-large btn-three {{activeClass(kledningBjelke.dekke,'Stubbeloftsgulv')}}" ng-click="setDekke('Stubbeloftsgulv')">Stubbeloftsgulv</button>
 </div>
 
 <br>
