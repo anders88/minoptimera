@@ -43,6 +43,10 @@ ul.bigicon li {
 	width: 33.33%;
 }
 
+.btn-group .dropdown-menu {
+	font-size: 40px;
+}
+
 .btn-prev-next {
 	width: 25%;
 }
