@@ -1,23 +1,24 @@
 angular.module('minoptimera')
-    .controller('DokumentCtrl', ['$scope',
-        function($scope) {
-            $scope.filenames = [];
+    .controller('DokumentCtrl', ['$scope', 'choicesService',
+        function($scope,choicesService) {
+            $scope.documents = choicesService.documents;
             $scope.upload = function() {
                 $("#uploadbtn").click();
             };
             $scope.fileSelected = function(element) {
-                $scope.filenames.push($("#uploadbtn").val().match(/[\w_.-]*?(?=\?)|[\w_.-]*$/)[0]);
+                var filename = $("#uploadbtn").val().match(/[\w_.-]*?(?=\?)|[\w_.-]*$/)[0];
+                $scope.documents.uploadedFiles.push(filename);
                 $scope.$apply();
             };
 
-            $scope.grunnlag = "standard";
+            $scope.grunnlag = choicesService.grunnlag;
 
             $scope.activeClass = function(model,value) {
                 return (value == model) ? "btn-primary active" : "";
             };
 
             $scope.setGrunnlag = function(value) {
-                $scope.grunnlag = value;
+                $scope.documents.grunnlag = value;
             };
 
         }]);

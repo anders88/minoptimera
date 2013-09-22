@@ -55,6 +55,10 @@ angular.module('minoptimera')
             toggle: function(fieldname) {
                 var field = choices[fieldname];
                 field.checked = !field.checked;
+            },
+            documents: {
+                uploadedFiles : [],
+                grunnlag: "standard"
             }
         }
         return service;

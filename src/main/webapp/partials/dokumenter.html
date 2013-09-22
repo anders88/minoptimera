@@ -9,14 +9,14 @@
         <br/>
         <h2>Valgte dokumenter</h2>
 <ul class="bigicon">
-    <li ng-repeat="filename in filenames"><h3>{{filename}}</h3></li>
+    <li ng-repeat="filename in documents.uploadedFiles"><h3>{{filename}}</h3></li>
 </ul>
 <br/>
 <br/>
 <h2>Grunnlag for kalkulasjon</h2>
 <div class="row-fluid btn-group" data-toggle="buttons-radio" align="center">
-    <button type="button" class="btn btn-large btn-two-large {{activeClass(grunnlag,'standard')}}" ng-click="setGrunnlag('standard')">Optimera standard</button>
-    <button type="button" class="btn btn-large btn-two-large {{activeClass(grunnlag,'egen')}}" ng-click="setGrunnlag('egen')">Vedlagt egen beskrivelse</button>
+    <button type="button" class="btn btn-large btn-two-large {{activeClass(documents.grunnlag,'standard')}}" ng-click="setGrunnlag('standard')">Optimera standard</button>
+    <button type="button" class="btn btn-large btn-two-large {{activeClass(documents.grunnlag,'egen')}}" ng-click="setGrunnlag('egen')">Vedlagt egen beskrivelse</button>
 </div>
 
 <br/>
