@@ -45,6 +45,36 @@ angular.module('minoptimera')
                 checked: false,
                 offval: "img/sentralstovesuger.png",
                 onval: "img/sentralstovesuger-valgt.png"
+            },
+            enebolig: {
+                checked: false,
+                offval: "img/enebolig.png",
+                onval: "img/enebolig-valgt.png"
+            },
+            rekkehus: {
+                checked: false,
+                offval: "img/rekkehus.png",
+                onval: "img/rekkehus-valgt.png"
+            },
+            leilighetsbygg: {
+                checked: false,
+                offval: "img/leilighetsbygg.png",
+                onval: "img/leilighetsbygg-valgt.png"
+            },
+            hytte: {
+                checked: false,
+                offval: "img/hytte.png",
+                onval: "img/hytte-valgt.png"
+            },
+            naringsbygg: {
+                checked: false,
+                offval: "img/naeringsbygg.png",
+                onval: "img/naeringsbygg-valgt.png"
+            },
+            fredetBygg: {
+                checked: false,
+                offval: "img/fredetbygg.png",
+                onval: "img/fredetbygg-valgt.png"
             }
         };
         var service = {

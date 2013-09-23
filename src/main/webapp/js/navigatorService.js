@@ -5,10 +5,11 @@ angular.module('minoptimera')
             dokumenter: {index: 1, page: "#/salgskalkyle/dokumenter"},
             kledning: {index: 2, page: "#/salgskalkyle/kledning-og-bjelke"},
             tak: {index: 3, page: "#/salgskalkyle/tak"},
-            yttervegg: {index: 4, page: "#/salgskalkyle/yttervegg-og-listverk"}
+            yttervegg: {index: 4, page: "#/salgskalkyle/yttervegg-og-listverk"},
+            typeBygg:  {index: 5, page: "#/salgskalkyle/type-bygg"}
         };
 
-        var numPages=5;
+        var numPages=6;
 
         var currentPage=pages.meny;
 
