@@ -17,9 +17,19 @@
 </head>
 <body>
 
-    <div class="container-fluid">
-        <div class="row" style="background-color:black;align:center"><img src="img/header.png"/></div>
-        <div ng-view></div>
+    <div id="wrap">
+        <div id="main">
+        <div class="container-fluid">
+            <div class="row" style="background-color:black;align:center"><img src="img/header.png"/></div>
+            <div ng-view></div>
+        </div>
+        </div>
     </div>
+
+    <div id="footer" class="row-fluid" align="center">
+        <button class="btn btn-large btn-wide btn-success btn-prev-next" onclick="window.location='#/salgskalkyle'">Forrige</button>
+        <button class="btn btn-large btn-wide btn-success btn-prev-next" onclick="window.location='#/salgskalkyle/kledning-og-bjelke'">Neste</button>
+    </div>
+
 </body>
 </html>
