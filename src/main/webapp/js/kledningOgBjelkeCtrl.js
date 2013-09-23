@@ -1,5 +1,6 @@
-angular.module('minoptimera').controller('KledningOgBjelkeCtrl',[ '$scope', 'choicesService',
-        function($scope,choicesService) {
+angular.module('minoptimera').controller('KledningOgBjelkeCtrl',[ '$scope', 'choicesService','navigatorService',
+        function($scope,choicesService,navigatorService) {
+            navigatorService.pageLoad("kledning");
             $scope.kledningBjelke = choicesService.kledningBjelke;
 			/*$scope.kledning_profil = "";
 			$scope.kledning_behandlet = "";

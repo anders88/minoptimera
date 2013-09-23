@@ -1,5 +1,6 @@
-angular.module('minoptimera').controller('YtterveggOgListverkCtrl',[ '$scope', 'choicesService',
-    function($scope,choicesService) {
+angular.module('minoptimera').controller('YtterveggOgListverkCtrl',[ '$scope', 'choicesService','navigatorService',
+    function($scope,choicesService,navigatorService) {
+            navigatorService.pageLoad("yttervegg");
             $scope.yttervegg = choicesService.yttervegg;
 
             $scope.activeClass = function(model,value) {

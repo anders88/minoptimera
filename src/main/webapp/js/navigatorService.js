@@ -4,7 +4,7 @@ angular.module('minoptimera')
             meny: {index: 0, page: "#/salgskalkyle"},
             dokumenter: {index: 1, page: "#/salgskalkyle/dokumenter"},
             kledning: {index: 2, page: "#/salgskalkyle/kledning-og-bjelke"},
-            bjelke: {index: 3, page: "#/salgskalkyle/tak"},
+            tak: {index: 3, page: "#/salgskalkyle/tak"},
             yttervegg: {index: 4, page: "#/salgskalkyle/yttervegg-og-listverk"}
         };
 

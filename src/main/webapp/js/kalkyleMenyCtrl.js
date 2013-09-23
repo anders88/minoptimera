@@ -1,5 +1,6 @@
 angular.module('minoptimera').controller('KalkyleMenyCtrl',
-    [ '$scope', 'choicesService',function($scope,choicesService) {
+    [ '$scope', 'choicesService','navigatorService',function($scope,choicesService,navigatorService) {
+    navigatorService.pageLoad("meny");
     $scope.takstolerIcon = choicesService.readIcon('takstoler');
     $scope.toggleTakstolerIcon = function() {
         choicesService.toggle('takstoler');
