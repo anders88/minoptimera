@@ -1,6 +1,7 @@
 angular.module('minoptimera')
-    .controller('DokumentCtrl', ['$scope', 'choicesService',
-        function($scope,choicesService) {
+    .controller('DokumentCtrl', ['$scope', 'choicesService','navigatorService',
+        function($scope,choicesService,navigatorService) {
+            navigatorService.pageLoad("dokumenter");
             $scope.documents = choicesService.documents;
             $scope.upload = function() {
                 $("#uploadbtn").click();
