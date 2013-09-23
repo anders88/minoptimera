@@ -11,36 +11,37 @@ angular.module('minoptimera')
 
         var numPages=6;
 
-        var currentPage=pages.meny;
+        var currentPage = pages.meny;
 
-        var toPage = function(pagenum) {
-            currentPage = _.find(pages,function(page) {
-                return page.index == pagenum;
-            });
-             window.location = currentPage.page;
-        }
 
         var service = {
             pageLoad: function(pageid) {
-                currentPage = pages[pageid];
+                pageChanged(pages[pageid]);
             },
-            next: function() {
-                if (currentPage.index <numPages-1) {
-                    toPage(currentPage.index+1);
-                }
+
+            nextVisible: false,
+            previousVisible: false,
+            gotoNext: function() {
+                pageChanged(pageWithIndex(currentPage.index+1));
+                window.location = currentPage.page;
             },
-            previous: function() {
-                if (currentPage.index > 0) {
-                    toPage(currentPage.index-1);
-                }
-            },
-            nextVisible: function() {
-                return (currentPage.index <numPages-1);
-            },
-            previousVisible: function() {
-                return (currentPage.index > 0);
+            gotoPrevious: function() {
+                pageChanged(pageWithIndex(currentPage.index-1));
+                window.location = currentPage.page;
             }
         };
+
+        var pageWithIndex=function(index) {
+            return _.find(pages,function(page) {
+                return page.index == index;
+            });
+        }
+        var pageChanged=function(newpage) {
+            currentPage = newpage;
+            service.nextVisible = (currentPage.index <numPages-1);
+            service.previousVisible = (currentPage.index > 0);
+        };
+
         return service;
     }]);
 

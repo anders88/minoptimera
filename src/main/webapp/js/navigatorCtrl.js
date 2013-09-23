@@ -1,6 +1,7 @@
 angular.module('minoptimera')
     .controller('NavigatorCtrl', ['$scope', 'navigatorService',
         function($scope,navigatorService) {
+            /*
             $scope.gotoNext = function() {
                 navigatorService.next();
                 $scope.nextVisible = navigatorService.nextVisible();
@@ -10,8 +11,7 @@ angular.module('minoptimera')
                 navigatorService.previous();
                 $scope.nextVisible = navigatorService.nextVisible();
                 $scope.previousVisible = navigatorService.previousVisible();
-            };
-            $scope.nextVisible = navigatorService.nextVisible();
-            $scope.previousVisible = navigatorService.previousVisible();
+            };*/
+            $scope.navservice = navigatorService;
 
         }]);
