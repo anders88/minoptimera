@@ -32,6 +32,12 @@ angular.module('minoptimera')
                 if (currentPage.index > 0) {
                     toPage(currentPage.index-1);
                 }
+            },
+            nextVisible: function() {
+                return (currentPage.index <numPages-1);
+            },
+            previousVisible: function() {
+                return (currentPage.index > 0);
             }
         };
         return service;

@@ -32,8 +32,8 @@
     <div id="footer" class="row-fluid" align="center" ng-controller="NavigatorCtrl">
         <br/>
         <br/>
-        <button class="btn btn-large btn-wide btn-success btn-prev-next" ng-click="gotoPrevious()">Forrige</button>
-        <button class="btn btn-large btn-wide btn-success btn-prev-next" ng-click="gotoNext()">Neste</button>
+        <button class="btn btn-large btn-wide btn-success btn-prev-next" ng-click="gotoPrevious()" ng-show="previousVisible">Forrige</button>
+        <button class="btn btn-large btn-wide btn-success btn-prev-next" ng-click="gotoNext()" ng-show="nextVisible">Neste</button>
     </div>
 
 </body>
