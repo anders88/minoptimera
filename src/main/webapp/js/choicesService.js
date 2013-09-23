@@ -4,17 +4,17 @@ angular.module('minoptimera')
             takstoler: {
                 checked: false,
                 offval: "img/takstoler.png",
-                onval: "img/ikke-implementert-valg.png"
+                onval: "img/takstoler-valgt.png"
             },
             vindu: {
                 checked: false,
                 offval: "img/vinduer.png",
-                onval: "img/ikke-implementert-valg.png"
+                onval: "img/vinduer-valgt.png"
             },
             byggesett: {
                 checked: false,
                 offval: "img/byggesett.png",
-                onval: "img/ikke-implementert-valg.png"
+                onval: "img/byggesett-valgt.png"
             },
             trelast: {
                 checked: false,
@@ -29,7 +29,7 @@ angular.module('minoptimera')
             dorInnvendig: {
                 checked: false,
                 offval: "img/dor-innvendig.png",
-                onval: "img/ikke-implementert-valg.png"
+                onval: "img/dor-innvending-valgt.png"
             },
             ventilasjonsanlegg: {
                 checked: false,
@@ -39,12 +39,12 @@ angular.module('minoptimera')
             pipe: {
                 checked: false,
                 offval: "img/pipe.png",
-                onval: "img/ikke-implementert-valg.png"
+                onval: "img/pipe-valgt.png"
             },
             sentralstovsuger: {
                 checked: false,
                 offval: "img/sentralstovesuger.png",
-                onval: "img/ikke-implementert-valg.png"
+                onval: "img/sentralstovesuger-valgt.png"
             }
         };
         var service = {
