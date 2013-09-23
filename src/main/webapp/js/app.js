@@ -7,5 +7,6 @@ angular.module('minoptimera', []).
             when('/salgskalkyle/tak', {templateUrl: 'partials/tak.html', controller: 'TakCtrl'}).
             when('/salgskalkyle/yttervegg-og-listverk', {templateUrl: 'partials/yttervegg-og-listverk.html', controller: 'YtterveggOgListverkCtrl'}).
             when('/salgskalkyle/type-bygg', {templateUrl: 'partials/type-bygg.html', controller: 'TypeByggCtrl'}).
+            when('/salgskalkyle/annen-info', {templateUrl: 'partials/annen-info.html', controller: 'AnnenInfoCtrl'}).
             otherwise({redirectTo: '/salgskalkyle'});
     }]);

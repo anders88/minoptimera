@@ -6,10 +6,11 @@ angular.module('minoptimera')
             kledning: {index: 2, page: "#/salgskalkyle/kledning-og-bjelke"},
             tak: {index: 3, page: "#/salgskalkyle/tak"},
             yttervegg: {index: 4, page: "#/salgskalkyle/yttervegg-og-listverk"},
-            typeBygg:  {index: 5, page: "#/salgskalkyle/type-bygg"}
+            typeBygg:  {index: 5, page: "#/salgskalkyle/type-bygg"},
+            annenInfo:  {index: 6, page: "#/salgskalkyle/annen-info"}
         };
 
-        var numPages=6;
+        var numPages=7;
 
         var currentPage = pages.meny;
 
