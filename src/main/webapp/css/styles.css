@@ -78,3 +78,11 @@ html, body {height: 100%;}
 .wide {
     width: 10em;
 }
+
+.vertical-spacing {
+    margin-top: 2%;
+}
+
+.horizontal-spacing {
+    margin-right: 5%;
+}
