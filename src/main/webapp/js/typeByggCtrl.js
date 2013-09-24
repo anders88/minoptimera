@@ -3,7 +3,7 @@ angular.module('minoptimera')
 
         function($scope,choicesService,navigatorService) {
             navigatorService.pageLoad("typeBygg");
-            $scope.latitude="xxx";
+            /*$scope.latitude="xxx";
             navigator.geolocation.getCurrentPosition(function(posistion) {
                 $scope.latitude = posistion.coords.latitude;
                 $scope.longlitude = posistion.coords.longitude;
@@ -12,7 +12,7 @@ angular.module('minoptimera')
             }, function(message) {
                 $scope.latitude = "Error: " + message;
             });
-
+            */x
 
             $scope.eneboligIcon = choicesService.readIcon('enebolig');
             $scope.toggleEneboligIcon = function() {
