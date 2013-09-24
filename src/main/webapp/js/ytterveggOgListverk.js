@@ -22,6 +22,14 @@ angular.module('minoptimera').controller('YtterveggOgListverkCtrl',[ '$scope', '
             $scope.setBredde = function(value) {
             	$scope.yttervegg.bredde = value;
             };
-			
+
+            $scope.isSelected = function(value) {
+                if (value) {
+                    return "input-choice-box-selected";
+                }
+                return "";
+            };
+
+
 	}
 ]);

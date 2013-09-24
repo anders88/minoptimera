@@ -86,3 +86,16 @@ html, body {height: 100%;}
 .horizontal-spacing {
     margin-right: 5%;
 }
+
+
+.input-choice-box {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 0.5em 2.0em 0.5em 2.0em;
+    /*margin:*/
+}
+
+.input-choice-box-selected {
+    background-color: #0044cc;
+    color: #ffffff;
+}

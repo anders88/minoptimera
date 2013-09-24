@@ -99,8 +99,9 @@ angular.module('minoptimera')
                 list_profil : "",
                 list_behandlet : "",
                 hoyde : "48",
-                bredde : "148"
-
+                bredde : "148",
+                bunnsviller: false,
+                toppsviller: false
             },
             tak: {
 
