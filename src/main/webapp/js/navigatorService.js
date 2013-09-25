@@ -4,13 +4,13 @@ angular.module('minoptimera')
             meny: {index: 0, page: "#/salgskalkyle"},
             dokumenter: {index: 1, page: "#/salgskalkyle/dokumenter"},
             kledning: {index: 2, page: "#/salgskalkyle/kledning-og-bjelke"},
-            tak: {index: 3, page: "#/salgskalkyle/tak"},
-            yttervegg: {index: 4, page: "#/salgskalkyle/yttervegg-og-listverk"},
-            typeBygg:  {index: 5, page: "#/salgskalkyle/type-bygg"},
-            annenInfo:  {index: 6, page: "#/salgskalkyle/annen-info"}
+            //tak: {index: 3, page: "#/salgskalkyle/tak"},
+            yttervegg: {index: 3, page: "#/salgskalkyle/yttervegg-og-listverk"},
+            typeBygg:  {index: 4, page: "#/salgskalkyle/type-bygg"},
+            annenInfo:  {index: 5, page: "#/salgskalkyle/annen-info"}
         };
 
-        var numPages=7;
+        var numPages=6;
 
         var currentPage = pages.meny;
 
